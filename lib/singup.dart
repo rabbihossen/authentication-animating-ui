@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class SignupPage extends StatefulWidget {
@@ -13,29 +15,27 @@ class _SignupPageState extends State<SignupPage> {
         resizeToAvoidBottomInset: false,
         body: Column(crossAxisAlignment: CrossAxisAlignment.start, children: <
             Widget>[
-          Container(
-            child: Stack(
-              children: <Widget>[
-                Container(
-                  padding: EdgeInsets.fromLTRB(15.0, 110.0, 0.0, 0.0),
-                  child: Text(
-                    'Signup',
-                    style:
-                        TextStyle(fontSize: 80.0, fontWeight: FontWeight.bold),
-                  ),
+          Stack(
+            children: <Widget>[
+              Container(
+                padding: EdgeInsets.fromLTRB(15.0, 110.0, 0.0, 0.0),
+                child: Text(
+                  'Signup',
+                  style:
+                      TextStyle(fontSize: 80.0, fontWeight: FontWeight.bold),
                 ),
-                Container(
-                  padding: EdgeInsets.fromLTRB(260.0, 125.0, 0.0, 0.0),
-                  child: Text(
-                    '.',
-                    style: TextStyle(
-                        fontSize: 80.0,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.green),
-                  ),
-                )
-              ],
-            ),
+              ),
+              Container(
+                padding: EdgeInsets.fromLTRB(260.0, 125.0, 0.0, 0.0),
+                child: Text(
+                  '.',
+                  style: TextStyle(
+                      fontSize: 80.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.green),
+                ),
+              )
+            ],
           ),
           Container(
               padding: EdgeInsets.only(top: 35.0, left: 20.0, right: 20.0),
